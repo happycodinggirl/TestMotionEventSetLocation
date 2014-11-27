@@ -69,6 +69,8 @@ public class MainActivity extends ActionBarActivity {
 				case MotionEvent.ACTION_DOWN:
 					float x=event.getX();
 					float y=event.getY();
+					
+					
 					event.setLocation(x, y+25);
 					return listView.dispatchTouchEvent(event);
 					
